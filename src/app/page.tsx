@@ -1,4 +1,4 @@
-import Main from "./components/Task_one/page";
+import Main from "./How_it_works/page";
 
 
 export default function Home() {

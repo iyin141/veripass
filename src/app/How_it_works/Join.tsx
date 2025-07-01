@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import four from '../../../../public/img/four.png'
-import five from '../../../../public/img/five.png'
-import six from '../../../../public/img/six.png'
-import seven from '../../../../public/img/seven.png'
+import four from '../../../public/img/four.svg'
+import five from '../../../public/img/calender.svg'
+import six from '../../../public/img/camera.svg'
+import seven from '../../../public/img/clock.svg'
 import { LuArrowRight } from 'react-icons/lu';
 
 const info = [{ img: five, header: 'Schedule Your Consultation', p: 'Speak to our team and see how we can help craft your success story.',id:1 },
@@ -19,7 +19,7 @@ const Join = () => {
               <Image src={four} alt='' className='w-[50%] h-auto max-lg:h-[100%] max-lg:pt-12 max-sm:w-[100%]' />
               <div className='w-[45%] max-sm:w-[100%] text-left pt-12 flex flex-col gap-5 md:items-start'>
                   <h1 className='text-[3.4vw] max-sm:text-[7.5vw] font-semibold '>Your Future, Delivered in Just <span className='text-[#1c82ef]'>60 Days</span>.</h1>
-                  <p className='text-[#b3aeae] pb-3'>The journey to global recognition doesn{`'`}t have to be complicated. In as little as 60 days, VeriPass will guide you through a transformative process that aligns your achievements with the requirements of U.S. immigration. From strategy to execution, we provide unparalleled expertise so you can focus on expanding your influence and building your legacy.</p>
+                  <p className='text-[#b3aeae] pb-3 text-[16px] leading-[24px] font-normal'>The journey to global recognition doesn{`'`}t have to be complicated. In as little as 60 days, VeriPass will guide you through a transformative process that aligns your achievements with the requirements of U.S. immigration. From strategy to execution, we provide unparalleled expertise so you can focus on expanding your influence and building your legacy.</p>
                   <button className=' bg-[#0045F6FF] text-white pt-3 pb-3 pl-5 pr-5 rounded-[5px] text-[1.2rem]   '>Start your Journey now</button>
               </div>
       </div>
@@ -38,7 +38,7 @@ const Join = () => {
                   <Image src={i.img} alt=''  />
               </div>
               <h1 className='font-semibold'>{i.header}</h1>
-              <p className='text-[#b3aeae] text-[1.1rem] font-light'>{i.p}</p>
+              <p className='text-[#b3aeae] max-sm:text-[1.1rem] text-[18px] leading-[26px] font-normal'>{i.p}</p>
               </div>
               <span className={`${i.id === 3 ? 'hidden' : ' pl-9 flex flex-col justify-center max-xl:hidden max-sm:block max-sm:pl-[50%] '}`}><LuArrowRight  className="text-white mt-1 left max-sm:rotate-[90deg]" size={20} /></span>
             </div>

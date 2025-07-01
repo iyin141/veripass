@@ -2,9 +2,9 @@ import React from 'react'
 import { LuArrowRight } from 'react-icons/lu';
 import { Montserrat } from 'next/font/google'
 import Image from 'next/image';
-import eight from '../../../../public/img/eight.png'
-import nine from '../../../../public/img/nine.png'
-import ten from '../../../../public/img/ten.png'
+import eight from '../../../public/img/blog.svg'
+import nine from '../../../public/img/nine.png'
+import ten from '../../../public/img/ten.png'
 import { LuArrowUpRight } from 'react-icons/lu';
 
 const font = Montserrat({

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Inter } from 'next/font/google'
-import one from '../../../../public/img/one.png'
-import two from '../../../../public/img/two.png'
-import three from '../../../../public/img/three.png'
+import one from '../../../public/img/dotsConnect.svg'
+import two from '../../../public/img/headphone.svg'
+import three from '../../../public/img/purplePerson.svg'
 import Image from 'next/image'
     
 const font = Inter({
@@ -21,14 +21,14 @@ const Qualities = () => {
     <div className={`${font.className} pl-[5%] pr-[5%] pb-[5%] flex flex-col gap-[5rem]`}>
       <div className='w-[50%] flex flex-col justify-center text-center mx-auto gap-4 max-sm:w-[100%]'>
         <h1 className='text-[4vw] max-sm:text-[8vw] font-semibold'>Why High Achievers Trust VeriPass</h1>
-        <p className='text-[1.2rem] text-[#0000009d]'>While many visa service providers only handle basic documentation, VeriPass offers a full-service, done-for-you experience. Here{`'`}s what sets us apart:</p>
+        <p className='max-lg:text-[1.2rem] text-[#0000009d] text-[18px] leading-[28px]'>While many visa service providers only handle basic documentation, VeriPass offers a full-service, done-for-you experience. Here{`'`}s what sets us apart:</p>
       </div>
       <div className='flex flex-wrap justify-between max-sm:gap-10 '>
         {info.map((i) => (
           <div key={i.header} className='flex flex-col gap-5 w-[30%] max-sm:w-[100%] pb-7 border-b border-[#dbd8d8]'>
             <Image src={i.img} alt='' />
             <h1 className='font-semibold'>{i.header}</h1>
-            <p className='text-left text-[#00000094]'>{i.text}</p>
+            <p className='text-left font-normal text-[#00000094] text-[16px] leading-[24px]'>{i.text}</p>
             </div>
           ))}
       </div>
