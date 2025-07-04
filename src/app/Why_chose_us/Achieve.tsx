@@ -26,7 +26,7 @@ const Achieve = () => {
   return (
     <div className={`${font.className} pl-[4%] pr-[4%] pb-[5%] flex flex-col gap-[5rem] max-sm:gap-[3.5rem]`}>
       <div className='mx-auto w-[60%] max-sm:w-[100%] flex flex-col justify-center text-center gap-2'>
-        <h1 className='font-semibold text-[4vw] max-sm:text-[8vw] -tracking-tight'>Achieve Your American Dream in Just 6 months</h1>
+        <h1 className='font-semibold text-[4vw] max-sm:text-[8vw] -tracking-tight'>Achieve Your American Dream in Just 6 months.</h1>
         <p className='text-[18px] text-[#4d4d5a]'>These are the reasons why the top 1% choose to work with us.</p>
       </div>
       <div className=''>
