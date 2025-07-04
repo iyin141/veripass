@@ -24,26 +24,26 @@ const info = [{text:'Gain U.S. residency, opening doors to a world of opportunit
 
 const Achieve = () => {
   return (
-    <div className={`${font.className} pl-[5%] pr-[5%] pb-[5%] flex flex-col gap-[5rem] max-sm:gap-[3.5rem]`}>
+    <div className={`${font.className} pl-[4%] pr-[4%] pb-[5%] flex flex-col gap-[5rem] max-sm:gap-[3.5rem]`}>
       <div className='mx-auto w-[60%] max-sm:w-[100%] flex flex-col justify-center text-center gap-2'>
         <h1 className='font-semibold text-[4vw] max-sm:text-[8vw] -tracking-tight'>Achieve Your American Dream in Just 6 months</h1>
         <p className='text-[18px] text-[#4d4d5a]'>These are the reasons why the top 1% choose to work with us.</p>
       </div>
       <div className=''>
-        <Image src={hero_3} alt='' className='max-lg:h-[15rem] ' />
+        <Image src={hero_3} alt='' className='max-lg:h-[15rem] w-[100%]' />
       </div>
       <div className='flex flex-wrap justify-center gap-5 max-lg:flex-col max-sm:gap-8'>
         {info.map((i) => {
             return (
-              <div key={i.id} className='w-[23%] max-lg:w-[100%]  font-light flex flex-col gap-2 max-sm:gap-4   text-[#6e6c6c] items-start'>
-                <div className='flex gap-5 lg:h-[10rem] '>
+              <div key={i.id} className='w-[23%] max-lg:w-[100%]  font-light flex flex-col gap-2 max-sm:gap-4   text-black text-left'>
+                <div className='flex gap-5 lg:h-[8.5rem] '>
                   <div>
                      <Image src={asterik} alt='' className='pb-2' />
-                      <p className='pb-3'>{i.text}</p>
+                      <p className='pb-3 text-[16px] font-normal leading-[24px]'>{i.text}</p>
                   </div>
                   <span className={`${i.id > 3 ? "block h-full w-[2px] bg-gradient-to-b from-white via-white to-white" : "block h-[200%] z-10 w-[2px] bg-gradient-to-b from-white via-[#9BAAF1] to-white"} max-sm:hidden`} />
                 </div>
-                <span className={`${i.id > 4 ? '' : i.id == 1 ? " w-[200%] from-white via-[#9BAAF1] to-[#9BAAF1]" : i.id === 4 ? " w-[100%] from-[#9BAAF1] via-[#9BAAF1] to-white" : "w-[200%] from-[#9BAAF1] via-[#9BAAF1] to-[#9BAAF1]"} block h-[0.1vh]  bg-gradient-to-r max-lg:hidden`} />
+                <span className={`${i.id > 4 ? '' : i.id == 1 ? " w-[200%] from-white via-[#9BAAF1] to-[#9BAAF1]" : i.id === 4 ? " w-[100%] from-[#9BAAF1] via-[#9BAAF1] to-white" : "w-[200%] from-[#9BAAF1] via-[#9BAAF1] to-[#9BAAF1]"} block h-[1px]  bg-gradient-to-r max-lg:hidden`} />
                 <span className=" h-[0.05rem] w-full bg-gradient-to-r from-white via-[#6379ea] to-white hidden max-lg:block" />
           </div>
           )
