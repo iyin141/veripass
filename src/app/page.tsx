@@ -1,4 +1,5 @@
-import Main from "./How_it_works/page";
+import Main from "./Home/page";
+
 
 
 export default function Home() {

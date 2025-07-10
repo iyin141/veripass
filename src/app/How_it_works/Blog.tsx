@@ -21,7 +21,7 @@ const info = [{ img: nine, header: 'Top Careers That Qualify for the EB2 NIW Vis
 
 const Blog = () => {
   return (
-      <div className='pl-[6%] pr-[6%] flex-col flex gap-12'>
+      <div className='pl-[6%] pr-[6%] flex-col flex gap-12 pb-12'>
           <div className='flex w-[100%] justify-between'>
               <h1 className='text-[3vw] font-semibold text-[#0045F6]'>Our blog</h1>
               <button className={`${font.className} hover:border-b-[1px] flex pt-5  gap-2 `}>See Pricing  <LuArrowRight  className="text-black mt-1 left" /></button>
